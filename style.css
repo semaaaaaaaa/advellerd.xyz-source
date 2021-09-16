@@ -1,88 +1,172 @@
 
 body {
-    margin:0;
-    padding:0;
-    background: #282828;
-  }
-  
-  ul {
-    margin:0;
-    padding:0;
-    display:flex;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  ul li {
-    list-style:none;
-    margin: 0 15px;
-  }
-  
-  ul li a {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    background: #171515;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #666;
-    transition: .5s;
-  }
-  
-  ul li a:before {
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    background: #000000;
-    transition: .5s;
-    transform: scale(.9);
-    z-index: -1;
-  }
-  
-  ul li a:hover:before {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px #282828;
-    filter: blur(3px);
-  }
-  
-  a:hover {
-    color: #ff0000;
-    box-shadow: 0 0 35px #000000;
-    text-shadow: 0 0 15px #202020;
-  }
-  .bg {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    width: 200%;
-    height: 200vh;
-    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-    background-repeat: repeat;
-    animation: bg-animation .2s infinite;
-    opacity: .9;
-    visibility: visible;
-  }
-  @keyframes bg-animation {
-      0% { transform: translate(0,0) }
-      10% { transform: translate(-5%,-5%) }
-      20% { transform: translate(-10%,5%) }
-      30% { transform: translate(5%,-10%) }
-      40% { transform: translate(-5%,15%) }
-      50% { transform: translate(-10%,5%) }
-      60% { transform: translate(15%,0) }
-      70% { transform: translate(0,10%) }
-      80% { transform: translate(-15%,0) }
-      90% { transform: translate(10%,5%) }
-      100% { transform: translate(5%,0) }
-  }
+  margin:0;
+  padding:0;
+  background: #282828;
+}
+
+ul {
+  margin:0;
+  padding:0;
+  display:flex;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style:none;
+  margin: 0 15px;
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #171515;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+.github {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #171515;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background: #000000;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+a:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background: #000000;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul li a:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #282828;
+  filter: blur(3px);
+}
+.github:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #282828;
+  filter: blur(3px);
+}
+
+a:hover {
+  color: #ff0000;
+  box-shadow: 0 0 35px #000000;
+  text-shadow: 0 0 15px #000000;
+}
+.github:hover {
+  color: #fff;
+  box-shadow: 0 0 35px #000000;
+  text-shadow: 0 0 15px #000000;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+.spotify {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #171515;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+.spotify:hover {
+  color: rgb(0, 255, 136);
+  box-shadow: 0 0 35px #000000;
+  text-shadow: 0 0 15px #000000;
+}
+.spotify:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #282828;
+  filter: blur(3px);
+}
+.discord {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #171515;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+.discord:hover {
+  color: rgb(162, 0, 255);
+  box-shadow: 0 0 35px #000000;
+  text-shadow: 0 0 15px #000000;
+}
+.discord:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #282828;
+  filter: blur(3px);
+}
